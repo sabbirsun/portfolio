@@ -3,6 +3,24 @@ body {
     font-family: 'Arial', sans-serif;
     transition: background-color 0.3s, color 0.3s;
 }
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  @keyframes blink {
+    50% { border-color: transparent; }
+  }
+  
+  .typewriter {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.15em solid black; /* Adjust the color and thickness */
+    font-size: 1.5em;
+    animation: typing 3.5s steps(40, end), blink 0.75s step-end infinite;
+  }
+  
 
 .contact-form {
     background-color: #ffffff;
